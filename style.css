@@ -1,0 +1,58 @@
+$bg: #011115
+$ctrlbg: #080808
+$highlight: #3dfff5
+$light: #fff
+
+html
+  background: $bg
+
+body
+  min-height: 100vh
+  overflow: hidden
+  font-family: monospace
+  color: $light
+  background: $bg
+  
+#svg
+  text-align: center
+  
+  g
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    index: 100
+    text-align: center
+  
+  rect
+    transition: all 0.3s ease-out
+
+$sm-bp: 768px
+$md-bp: 992px
+$lg-bp: 1200px
+
+#gen,#ctrl
+  index: 10
+  position: fixed
+  bottom: 0
+  background: rgba(0,0,0,0.5)
+  color: rgba($light,.65)
+
+  a
+    margin: 10px 20px
+    position: relative
+    font-size: 40px
+    cursor: pointer
+    
+    i
+      height: 100%
+      
+#gen
+  right: 10px
+  
+@media (min-width: $md-bp)
+  #ctrl
+    a
+      margin: 5px 10px
+      font-size: 20px
